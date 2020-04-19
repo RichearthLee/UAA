@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    include: ${profiles.active}
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+
+server:
+  port: 8091
+  servlet:
+    context-path: /uaa/
+
+
+
+
